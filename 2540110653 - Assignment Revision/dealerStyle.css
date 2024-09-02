@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One', sans-serif;
+    box-sizing: border-box;
+}
+
+.body{
+    /* background-image: black; */
+    background-repeat: repeat-y;
+}
+
+#banner{
+    background: black;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#banner p{
+    padding-top: 0%;
+    padding-left: 5%;
+    text-align: left;
+}
+
+#banner h1{
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-bottom: 2%;
+    color: red;
+}
+
+#banner h4{
+    text-align: left;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid black;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 5px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+
+#footer{
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    background: black;
+    border-top: 1px solid #fff;
+}
+
+#footer p{
+    color: red;
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-left{
+    text-align: left;
+}
+.footer-right{
+    text-align: right;
+}
+
+.footer-row h1{
+    margin: 10px 0;
+    /* color: red; */
+}
+
+.footer-row p{
+    line-height: 35px;
+    color: white;
+}
+
+.social-links{
+    text-align: center;
+    color: #fff;
+}
+
+.social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    margin: 40px 50px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social-links .fa:hover{
+    background: #fff;
+    color: black;
+    transform: translateY(-7px);
+}
+
+.social-links p{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .test{
+        padding-top: 2.5%;
+    }
+}

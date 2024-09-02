@@ -1,0 +1,381 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One', sans-serif;
+    box-sizing: border-box;
+}
+
+.body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Assets/Bike\ Background.jpeg);
+    background-repeat: repeat-y;
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Assets/Bike\ Background.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+
+.banner-text{
+    text-align: center;
+    color: black;
+    padding-top: 180px;
+}
+
+.banner-text h1{
+    font-size: 80px;
+    color: red;
+}
+
+.banner-text p{
+    font-size: 20px;
+    color: #fff;
+}
+
+.banner-button{
+    margin: 70px auto 0;
+    color: #fff;
+}
+
+.banner-button a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: #fff;
+    border: .5px solid #fff;
+    transition: black 0.5s;
+}
+
+.banner-button a span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: -1;
+}
+
+.banner-button a span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-button a:hover span{
+    width: 100%;
+}
+
+.banner-button a:hover{
+    color: black;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid black;
+}
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a{
+    line-height: 5px;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 6px;
+}
+
+#products{
+    width: 100%;
+    padding: 70px 0;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(Assets/Bike\ Background.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 200vh;
+}
+
+#products p{
+    color: red;
+}
+
+.product-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-product{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    /* color: #fff; */
+}
+
+.single-product img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-product:hover .overlay{
+    opacity: 1;
+}
+
+.product-desc{
+    width: 80%;
+    position: inherit;
+    text-align: center;
+    margin-left: 30px;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+} */
+
+/* hr{
+    background: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+} */
+
+.single-product:hover .product-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+
+#footer{
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    background: black;
+    border-top: 1px solid #fff;
+}
+
+#footer p{
+    color: red;
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-left{
+    text-align: left;
+}
+.footer-right{
+    text-align: right;
+}
+
+.footer-row h1{
+    margin: 10px 0;
+    /* color: red; */
+}
+
+.footer-row p{
+    line-height: 35px;
+    color: white;
+}
+
+.social-links{
+    text-align: center;
+    color: #fff;
+}
+
+.social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    margin: 40px 50px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.social-links .fa:hover{
+    background: #fff;
+    color: black;
+    transform: translateY(-7px);
+}
+
+.social-links p{
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1{
+        font-size: 50px;
+    }
+
+    .banner-button a{
+        display: block;
+        margin: 20px auto;
+    }
+
+    .logo{
+        width: 100px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        text-align: center;
+        font-size: 3vw;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 4;
+        border-bottom: 1px solid black;
+        display: flex;
+    }
+
+    .nav-left{
+        width: 100%;
+        height: 25px;
+    }
+
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-size: 2vw;
+    }
+
+    nav li{
+        position: relative;
+        font-size: 3vw;
+        transition: 0.3s;
+        /* background-color: brown; */
+        width: 100%;
+    }
+
+    nav ul li a{
+        line-height: 80px;
+        color: #fff;
+        margin-left: 5px;
+        margin-top: 10%;
+        padding-left: 190%;
+        text-decoration: none;
+        font-size: 1vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* background-color: blue; */
+    }
+
+    nav ul li:hover{
+        transform: scale(1.05);
+        text-shadow: black;
+    }
+
+    #products{
+        height: 300vh;
+    }
+
+    .single-product{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    hr{
+        margin: 5px auto;
+    }
+
+    .single-product:hover .product-desc{
+        bottom: 25% !important;
+    }
+
+    .footer-left, .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .test{
+        padding-top: 2.5%;
+    }
+}
